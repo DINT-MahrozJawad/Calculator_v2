@@ -24,7 +24,7 @@ namespace Calculator_v2
         {
             InitializeComponent();
 
-           // int contador = 1;
+           int contador = 1;
 
             for (int i = 1; i <= 3; i++)
             {
@@ -41,7 +41,7 @@ namespace Calculator_v2
 
                     button.Tag = contador;
 
-                    tb.Text = $"{((i - 1) * 3) + j + 1}";
+                    tb.Text = contador.ToString();
                     button.Margin = new Thickness(10);
                     button.Click += Button_Click;
 
@@ -49,7 +49,7 @@ namespace Calculator_v2
                     Grid.SetColumn(button, j);
 
                     
-                   // contador++;
+                   contador++;
                 }
 
             }
